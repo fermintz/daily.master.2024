@@ -1,0 +1,68 @@
+html,body{
+  font-family:'Roboto', 'Noto Sans KR'
+}
+
+.flex-center{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-v-center{
+  display:flex;
+  align-items:center
+}
+
+input::placeholder{
+  font-size:14px;
+}
+
+.tab-animation{
+  animation: tab-animation 0.3s;
+}
+
+@keyframes tab-animation {
+  0%{
+    width:0px
+  }
+  100%{
+    width:100%;
+  }
+}
+
+input::placeholder{
+  font-size:13px;
+  font-weight: normal;
+}
+
+progress#orderState{
+  height:5px;
+  border-radius: 9999px;
+  overflow:hidden;
+  width:100%;
+  appearance: none;
+
+  &::-webkit-progress-bar{
+    background:#e2e2e4;
+
+  }
+  &::-webkit-progress-inner-element{
+    background:#0066ff;
+  }
+}
+
+
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.2s;
+}
+
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translate(30px, 0px);
+}
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translate(-30px, 0px);
+}
