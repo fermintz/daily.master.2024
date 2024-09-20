@@ -44,7 +44,7 @@ const shop =ref(false)
     <div class="" v-if="tabs === '매장설정'">
       <div class="p-1 gap-1 bg-gray-900 rounded-md flex items-center mb-4">
         <a 
-          v-for="item in ['가맹정보','노출정보','주문규칙','상품설정','서비스구역','휴무일관리','쿠폰관리','매장가격표']"
+          v-for="item in ['가맹정보','매장정보','주문규칙','상품설정','서비스구역','휴무일관리','쿠폰관리','매장가격표']"
           class="h-9 rounded flex-center px-3 text-sm cursor-pointer "
           :class="[tabs2 === item ? 'bg-white font-semibold hover:bg-white': ' text-gray-400 hover:bg-gray-700 hover:text-gray-100']"
           @click="tabs2 = item"
@@ -52,18 +52,18 @@ const shop =ref(false)
           {{ item }}
         </a>
       </div>
-      <ShopInfoView v-if="tabs2 === '가맹정보'"/>
-      <ShopUserView v-if="tabs2 === '노출정보'"/>
-      <ShopRulesView v-if="tabs2 === '주문규칙'"/>
+      <ShopInfo v-if="tabs2 === '가맹정보'"/>
+      <ShopIntro v-if="tabs2 === '매장정보'"/>
+      <ShopRules v-if="tabs2 === '주문규칙'"/>
       <ShopProductView v-if="tabs2 === '상품설정'"/>
-      <ShopHolydayView v-if="tabs2 === '휴무일관리'"/>
-      <ShopCouponView v-if="tabs2 === '쿠폰관리'"/>
+      <ShopHolyday v-if="tabs2 === '휴무일관리'"/>
+      <ShopCoupons v-if="tabs2 === '쿠폰관리'"/>
       <ShopCoverageView v-if="tabs2 === '서비스구역'"/>
-      <ShopPriceView v-if="tabs2 === '매장가격표'"/>
+      <ShopPrice v-if="tabs2 === '매장가격표'"/>
     </div> <!-- 매장설정 -->
 
-    <ShopOrdersView v-if="tabs === '주문목록'"/>
-    <ShopCalcView v-if="tabs === '정산내역'"/>
+    <ShopOrders v-if="tabs === '주문목록'"/>
+    <ShopCalc v-if="tabs === '정산내역'"/>
 
   </div>
 </template>

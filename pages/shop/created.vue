@@ -9,7 +9,7 @@
     </div>
 
     <div>
-      <ShopInfoView />
+      <ShopInfo />
     </div>
   </div>
 </template>

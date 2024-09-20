@@ -34,7 +34,7 @@ const date = ref({
             </UButton>
           </dd>
         </dl>
-        <div class="h-px bg-gray-300 my-6"></div>
+        <StyleDivider />
         <dl class="flex items-start">
           <dt class="w-[180px]">등록된 휴무일</dt>
           <dd class="flex flex-col gap-3 flex-1">

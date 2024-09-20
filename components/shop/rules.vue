@@ -20,7 +20,7 @@
             </label>
           </dd>
         </dl>
-        <div class="h-px bg-gray-300 my-6"></div>
+        <StyleDivider />
         <dl class="flex items-start">
           <dt class="w-[180px] flex flex-col">
             <span>희망 수거시간</span>
@@ -51,7 +51,7 @@
             </ul>
           </dd>
         </dl>
-        <div class="h-px bg-gray-300 my-6"></div>
+        <StyleDivider />
         <dl class="flex items-center">
           <dt class="w-[180px] flex flex-col">
             <span>배송비</span>

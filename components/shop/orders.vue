@@ -27,7 +27,7 @@ const orderState = ref('예정')
 
     <div class="flex flex-col bg-white rounded-md">
       <div class="grid grid-cols-2 gap-4 p-6">
-        <ShopOrdersCard v-for="item in 10" :key="item"/>
+        <CardOrder v-for="item in 10" :key="item"/>
       </div>
     </div>
   

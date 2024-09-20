@@ -13,7 +13,6 @@
             <span class="text-xs text-red-500">(최대 5개)</span>
           </dt>
           <dd class="flex items-center gap-3 flex-1">
-
             <button
               type="button"
               class="w-[140px] h-[100px] border border-gray-400 border-dashed rounded-md flex items-center justify-center flex-col"
@@ -32,7 +31,7 @@
             </div>
           </dd>
         </dl>
-        <div class="h-px bg-gray-300 my-6"></div>
+        <StyleDivider />
         <dl class="flex items-start">
           <dt class="w-[180px] flex flex-col">
             <span>매장태그</span>
@@ -63,14 +62,14 @@
             </ul>
           </dd>
         </dl>
-        <div class="h-px bg-gray-300 my-6"></div>
+        <StyleDivider />
         <dl class="flex items-center">
           <dt class="w-[180px]">매장소개</dt>
           <dd class="flex items-center gap-3 flex-1">
             <textarea class="border border-gray-300 rounded-md w-full min-h-[180px] resize-none p-3"></textarea>
           </dd>
         </dl>
-        <div class="h-px bg-gray-300 my-6"></div>
+        <StyleDivider />
         <dl class="flex items-center">
           <dt class="w-[180px]">주문시 유의사항</dt>
           <dd class="flex items-center gap-3 flex-1">

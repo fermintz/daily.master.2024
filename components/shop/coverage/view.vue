@@ -22,7 +22,7 @@
           </div>
         </div>
       
-        <div class="h-[700px] bg-gray-100 rounded-md overflow-hidden"></div>
+        <ShopCoverageMap />
       </div>
     </div>
     <div class="bg-gray-100 flex items-center justify-end rounded p-3 gap-5 mt-10">

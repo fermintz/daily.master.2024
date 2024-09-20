@@ -5,7 +5,7 @@
 <template>
   <div class="flex flex-col bg-white rounded-md">
     <div class="flex flex-col p-6 gap-4">
-      <ShopCalcCard v-for="item in 10" :key="item"/>
+      <CardCalc />
     </div>
   </div>
 </template>
