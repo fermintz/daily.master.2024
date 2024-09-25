@@ -59,6 +59,22 @@ const date = ref(new Date())
       </dl>
 
       <StyleDivider />
+
+      <dl class="flex items-center">
+        <dt class="w-[180px]">세탁품목</dt>
+        <dd class="flex items-center gap-3 flex-1">
+          <div class="p-2 bg-blue-100 rounded-md text-sm leading-none gap-2 flex items-center">
+            <span class="">드라이클리닝</span>
+            <span class="text-blue-600 font-semibold text-base leading-none">5</span>
+          </div>
+          <div class="p-2 bg-blue-100 rounded-md text-sm leading-none gap-2 flex items-center">
+            <span class="">이불</span>
+            <span class="text-blue-600 font-semibold text-base leading-none">1</span>
+          </div>
+        </dd>
+      </dl>
+
+      <StyleDivider />
  
       <dl class="flex items-center ">
         <dt class="w-[180px]">주소지</dt>

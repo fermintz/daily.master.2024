@@ -1,45 +1,5 @@
 <script lang="ts" setup>
-const members =[
-  {
-    area:'부산',
-    name:'박수민',
-    phone:'010-8525-4561',
-    address:'부산시 사상구 덕상로 8-37 201동 2001호',
-    orderAmout:'3건',
-    coupon:'1개',
-    
-  },
-  {
-    area:'부산',
-    name:'박수민',
-    phone:'010-8525-4561',
-    address:'부산시 사상구 덕상로 8-37 201동 2001호',
-    orderAmout:'17건',
-    coupon:'1개',
-    
-  },
-  {
-    area:'부산',
-    name:'박수민',
-    phone:'010-8525-4561',
-    address:'부산시 사상구 덕상로 8-37 201동 2001호',
-    orderAmout:'10건',
-    coupon:'2개',
-  },
-]
 
-const options = {
-  base:'min-w-full table-fixed',
-  tr:{
-    base:'hover:bg-gray-50'
-  },
-  th:{
-    base:'bg-gray-100'
-  },
-  td:{
-    base:''
-  },
-}
 </script>
 
 <template>
@@ -61,8 +21,31 @@ const options = {
       </div>
     </div>
 
-    <div class="p-6 bg-white rounded-md flex flex-col gap-3 mt-6" >
-      <UTable :rows="members" :ui="options" />
+    <div class="p-6 bg-white rounded-md grid grid-cols-2 gap-5 mt-6" >
+      <div class="border border-gray-300 rounded-md p-5 bg-white hover:border-gray-400 cursor-pointer" v-for="item in 5" :key="item" @click="$router.push('/user/1')">
+        <div class="flex items-center gap-5">
+          <div class="w-20 h-20 rounded-full bg-blue-600 text-white text-lg flex-center font-semibold">4561</div>
+          <div class="flex flex-col">
+            <span class="font-semibold">박수민</span>
+            <span class="text-sm text-green-600 mt-1">010-8525-4561</span>
+            <span class="text-sm text-gray-500 mt-2">부산시 사상구 덕상로 8-37 덕포경동메르빌 201동 2001호</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 mt-5">
+          <div class="flex flex-col gap-1 flex-1 bg-gray-100 p-3 rounded-md">
+            <span class="text-sm text-gray-500">총주문수</span>
+            <span class="font-semibold text-sm">12건</span>
+          </div>
+          <div class="flex flex-col gap-1 flex-1 bg-gray-100 p-3 rounded-md">
+            <span class="text-sm text-gray-500">보유쿠폰</span>
+            <span class="font-semibold text-sm">1장</span>
+          </div>
+          <div class="flex flex-col gap-1 flex-1 bg-gray-100 p-3 rounded-md">
+            <span class="text-sm text-gray-500">최근주문일</span>
+            <span class="font-semibold text-sm">24-09-23</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

@@ -9,7 +9,7 @@
         <span class="">2024년 8월 28일</span>
         <span class="text-sm text-gray-500">수요일</span>
       </dt>
-      <dd class="grid grid-cols-4 gap-5">
+      <dd class="grid grid-cols-3 gap-5">
         <div class="flex flex-col" v-for="item in ['세탁완료']" :key="item">
           <div class="flex flex-col bg-gray-100 rounded-md overflow-hidden p-4" >
             <span class="text-sm text-gray-500">12:12</span>
@@ -25,22 +25,21 @@
       </dt>
       <dd class="grid grid-cols-4 gap-5">
         <div class="flex flex-col" >
-          <div class="flex flex-col bg-gray-100 rounded-md overflow-hidden p-4" >
-            <span class="text-sm text-gray-500">09:30</span>
-        
-            <span class=" font-semibold">수거완료</span>
-            <div class="rounded-md h-[150px] overflow-hidden mt-5 cursor-pointer">
+          <div class="flex gap-5 bg-gray-100 rounded-md overflow-hidden p-4 h-full">
+            <div class="flex flex-col flex-1">
+              <span class="text-sm text-gray-500">09:30</span>
+               <span class=" font-semibold">수거완료</span>
+            </div>
+            <div class="rounded-md w-[70px] h-[70px] overflow-hidden cursor-pointer">
               <img src="https://picsum.photos/720/1280" class="w-full h-full object-cover object-center" @click="useShowImageViewer('https://picsum.photos/720/1280')">
             </div>
           </div>
         </div>
 
         <div class="flex flex-col" >
-          <div class="flex flex-col bg-gray-100 rounded-md overflow-hidden p-4" >
+          <div class="flex flex-col bg-gray-100 rounded-md overflow-hidden p-4 h-full" >
             <span class="text-sm text-gray-500">15:57</span>
-        
             <span class=" font-semibold">검수완료</span>
-
           </div>
         </div>
       </dd>

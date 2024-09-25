@@ -15,7 +15,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col gap-3">
+      <div class="grid grid-cols-2 gap-3">
         <div class="flex items-center bg-gray-100 rounded-md p-3 gap-10">
           <span class="flex-1">생활물빨래 30L</span>
           <span class="font-semibold">14,900원</span>
