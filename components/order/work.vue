@@ -9,11 +9,13 @@
         <span class="">2024년 8월 28일</span>
         <span class="text-sm text-gray-500">수요일</span>
       </dt>
-      <dd class="grid grid-cols-3 gap-5">
+      <dd class="grid grid-cols-4 gap-5">
         <div class="flex flex-col" v-for="item in ['세탁완료']" :key="item">
-          <div class="flex flex-col bg-gray-100 rounded-md overflow-hidden p-4" >
-            <span class="text-sm text-gray-500">12:12</span>
-            <span class=" font-semibold">{{item}}</span>
+          <div class="flex gap-5 bg-gray-100 rounded-md overflow-hidden p-4 h-full" >
+            <div class="flex flex-col flex-1">
+              <span class="text-sm text-gray-500">12:12</span>
+              <span class=" font-semibold">{{item}}</span>
+            </div>
           </div>
         </div>
       </dd>

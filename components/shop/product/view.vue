@@ -13,15 +13,12 @@ const drag2 = ref(false)
 </script>
 
 <template>
-
-  
-
   <form class="bg-white p-2 rounded-md" name="total"> 
     <div class="p-4 py-6">
       <div class="flex items-center justify-between mb-4">
-        <h4 class="flex items-center gap-3">
+        <div class="font-semibold text-lg flex items-center gap-2">
           <span>상품목록</span>
-        </h4>
+        </div>
         <div class="flex items-center gap-3">
           <form name="fileForm" class="flex items-center gap-2">
             <UInput type="file" size="lg" icon="i-heroicons-folder" model-value=""></UInput>

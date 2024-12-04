@@ -122,7 +122,7 @@ const userMessage = () => useShowAlert('아직 준비중입니다');
             :class="[active === index ? 'block' : 'invisible']">
             <UButton type="button" class="h-7 flex-1 flex-center text-xs rounded" color="white" @click="workDelete">삭제
             </UButton>
-            <UButton type="button" class="h-7 flex-1 flex-center text-xs rounded" @click="pickupComplete = true">완료
+            <UButton type="button" class="h-7 flex-1 flex-center text-xs rounded" @click="productCheck = true">완료
             </UButton>
           </div>
         </div>

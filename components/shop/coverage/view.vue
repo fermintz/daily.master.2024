@@ -7,9 +7,10 @@
     <div class="p-4 py-6">
       <div class="flex flex-col gap-5">
         <div class="flex items-center justify-between">
-          <h4 class="flex items-center gap-3">
+          <div class="font-semibold text-lg flex items-center gap-2">
             <span>구역설정</span>
-          </h4>
+
+          </div>
           <div class="flex items-center gap-3 justify-end">
             <UButton class="h-10 px-4" color="white">초기화</UButton>
             <div class="flex items-center gap-3 border border-gray-300 rounded-md h-10 px-3">

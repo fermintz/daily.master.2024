@@ -44,7 +44,7 @@ const shop =ref(false)
     <div class="" v-if="tabs === '매장설정'">
       <div class="p-1 gap-1 bg-gray-900 rounded-md flex items-center mb-4">
         <a 
-          v-for="item in ['가맹정보','매장정보','주문규칙','상품설정','서비스구역','휴무일관리','쿠폰관리','매장가격표']"
+          v-for="item in ['가맹정보','매장정보','주문규칙','상품설정','서비스구역','휴무일관리','쿠폰관리','매장가격표','파트너관리']"
           class="h-9 rounded flex-center px-3 text-sm cursor-pointer "
           :class="[tabs2 === item ? 'bg-white font-semibold hover:bg-white': ' text-gray-400 hover:bg-gray-700 hover:text-gray-100']"
           @click="tabs2 = item"
@@ -60,6 +60,7 @@ const shop =ref(false)
       <ShopCoupons v-if="tabs2 === '쿠폰관리'"/>
       <ShopCoverageView v-if="tabs2 === '서비스구역'"/>
       <ShopPrice v-if="tabs2 === '매장가격표'"/>
+      <ShopPartner v-if="tabs2 === '파트너관리'"/>
     </div> <!-- 매장설정 -->
 
     <ShopOrders v-if="tabs === '주문목록'"/>

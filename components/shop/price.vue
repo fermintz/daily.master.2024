@@ -5,8 +5,11 @@
 <template>
   <form class="bg-white p-2 rounded-md">
     <div class="p-4 py-6">
-      <div class="flex items-center justify-end mb-6">
-
+      <div class="flex items-center justify-between mb-6">
+        <div class="font-semibold text-lg flex items-center gap-2">
+          <span>등록된 가격</span>
+          <span class="text-blue-600">6</span>
+        </div>
         <div class="flex items-center gap-3">
           <form name="fileForm" class="flex items-center gap-2">
             <UInput type="file" size="lg" icon="i-heroicons-folder" model-value=""></UInput>

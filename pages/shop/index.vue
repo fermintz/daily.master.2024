@@ -21,8 +21,17 @@ const country = ref()
       </div>
     </div>
 
-    <div class="grid grid-cols-3 gap-5 bg-white p-6 rounded-lg mt-6">
-      <CardShop v-for="item in 7" :key="item"/>
+    <div class="bg-white rounded-lg mt-6">
+      <div class="flex items-center justify-between p-6 border-b">
+        <div class="text-lg font-semibold flex items-center gap-2">
+          <span>등록된 상점</span>
+          <span class="text-blue-600">7</span>
+        </div>
+        <Pagination />
+      </div>
+      <div class="grid grid-cols-3 gap-5 p-6">
+        <CardShop v-for="item in 7" :key="item"/>
+      </div>
     </div>
 
   </div>
